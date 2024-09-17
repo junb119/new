@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junb's Profile Page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <main id="main-content" style="display: none">
+      <section class="scroll_wrapper">
+        <div class="scroll_icon">
+          <span>scroll</span>
+          <div>thick line</div>
+          <div>thin line</div>
+        </div>
+      </section>
+      <section class="intro scroll-section" id="scroll-section">
+        <h1>junb's 프로필페이지</h1>
+        <div class="sticky-elem sticky-elem-canvas">
+          <canvas id="video-canvas" width="1920" height="1080"></canvas>
+        </div>
+        <div class="sticky-elem main-message a">
+          <p>
+            안녕하세요.<br />
+            FRONTEND 개발자 <br />우준범입니다.
+          </p>
+        </div>
+        <div class="sticky-elem main-message b">
+          <p>성실하고 <br />책임감 있는 인재</p>
+        </div>
+        <div class="sticky-elem main-message c">
+          <p>편안하고 재미있는<br />맞춤형 동료</p>
+        </div>
+        <div class="sticky-elem main-message d">
+          <p>우리 한번<br />만나볼래요?</p>
+        </div>
+        <div class="sticky-elem go-main-btn">
+          <a href="main.html"
+            >go to main
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </section>
+      <!-- <section class="go"></section> -->
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

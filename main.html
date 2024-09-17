@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junb's Profile Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="./index.html">home</a></h1>
+        <ul class="df">
+          <li><a href="#" class="active">introduce</a></li>
+          <li><a href="#">skill ability</a></li>
+          <li><a href="#">porfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <main id="main-content" style="">
+      <!-- Slider main container -->
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <section id="introduce" class="swiper-slide slide1">
+            <div class="slide_wrapper">
+              <div class="title_container"><h2>introduce</h2></div>
+              <div class="introduce_container">
+                <h3>Hello I'm 우준범</h3>
+                <p>1992.01.19</p>
+                emfwokd@gmail.com
+                <p>
+                  안녕하세요. frontend 개발자 우준범입니다. 뒤늦게 개발에 흥미를
+                  품고 프론트엔드 개발자의 길에 뛰어들었습니다.
+                </p>
+                <div class="contact_link">
+                  <p>
+                    <a href="https://github.com/junb119" target="_blank"
+                      >github</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://velog.io/@junb119/" target="_blank"
+                      >velog</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="skill" class="swiper-slide slide2 df fdc aic">
+            <div class="slide_wrapper df fdc">
+              <div class="title_container">
+                <h2 class="">skill ability</h2>
+                <div class="list_nav">
+                  <div class="button-group">
+                    <button class="show">frontend</button>
+                    <button>backend</button>
+                    <button>workflow sw</button>
+                    <button>tool</button>
+                  </div>
+                </div>
+                <div class="selected_skill">
+                  <h3 class="show">frontend</h3>
+                </div>
+              </div>
+              <ul class="skill_container">
+                <li class="skill_box show">
+                  <ul>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/html.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">html</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">자신 있어요</p>
+                      </div>
+                    </li>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/css.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">css</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">익숙해요</p>
+                      </div>
+                    </li>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/js.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">javascript</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">보통이예요</p>
+                      </div>
+                    </li>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/bootstrap.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">bootstrap</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">사용해봤어요</p>
+                      </div>
+                    </li>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/jquery.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">jquery</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">자신 있어요</p>
+                      </div>
+                    </li>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/react.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">react</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">자신 있어요</p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="skill_box">
+                  <ul>
+                    <li class="df">
+                      <div class="skill_category">
+                        <img src="img/iconLarge/html.png" alt="" />
+                      </div>
+                      <div class="skill_descript">
+                        <h4 class="skill_name">back</h4>
+                        <div class="progress_bg">
+                          <div class="progress_bar" data-progress="80">0%</div>
+                        </div>
+                        <p class="skill_comment">back</p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="skill_box">workflow sw</li>
+                <li class="skill_box">tool</li>
+              </ul>
+            </div>
+          </section>
+          <section id="portfolio" class="swiper-slide slide3">
+            <!-- <div
+              id="dialog-content"
+              style="display: none; max-width: 1600px"
+            ></div> -->
+            <div id="dialog-content">
+              <div class="portfolio_dialog_bg">
+                <img src="./img/mirae_bg.png" alt="" />
+              </div>
+              <div class="portfolio_dialog_textBox df fdc">
+                <h3>미래에셋 리뉴얼 페이지</h3>
+                <ul class="skill_list">
+                  <li>스킬리스트</li>
+                </ul>
+                <div class="dalog_link">
+                  <a class="portfolio_direct" href="" target="_blank"
+                    >바로가기</a
+                  >
+                  <a class="portfolio_git" href="" target="_blank">github</a>
+                </div>
+                <div class="dialog_desc"></div>
+                <div class="feature">
+                  <h4>- 주요 기능 -</h4>
+                  <ul></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide_wrapper">
+              <div class="title_container">
+                <h2 class="">portfolio</h2>
+                <div class="list_nav fdc">
+                  <div class="button-group" data-filter-group="type">
+                    <button data-filter="" class="show">all</button>
+                    <button data-filter=".web_project">web project</button>
+                    <button data-filter=".toy_project">toy project</button>
+                  </div>
+                  <div class="button-group" data-filter-group="skill">
+                    <button data-filter="" class="show">all</button>
+                    <button data-filter=".javascript">javascript</button>
+                    <button data-filter=".jquery">jquery</button>
+                    <button data-filter=".react">react</button>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio_container">
+                <div class="grid">
+                  <!-- <figure
+                    class="grid-item web_project javascript jquery *"
+                  >
+                    <img src="./img/mirae.png" alt="" />
+                    <figcaption id="mirae">미래에셋 리뉴얼 페이지</figcaption>
+                  </figure>
+                  <figure class="grid-item toy_project javascript *">
+                    <img src="./img/pika.webp" alt="" />
+                    <figcaption id="pokemon">포켓몬 카드</figcaption>
+                  </figure>
+                  <figure class="grid-item --width2 web_project javascript *">
+                    <img src="./img/starbucks_bg.png" alt="" />
+                    <figcaption id="starbucks">스타벅스 메인 페이지</figcaption>
+                  </figure>
+                  <figure class="grid-item --width2 toy_project javascript *">
+                    <img src="./img/puzzle.webp" alt="" />
+                    <figcaption>포켓몬 카드</figcaption>
+                  </figure> -->
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact" class="swiper-slide slide4">
+            <div class="slide_wrapper df fdc">
+              <div class="title_container"><h2>contact</h2></div>
+
+              <div class="contact_container">
+                <form
+                  id="contact-form"
+                  class="gform contact_form df fdc"
+                  method="POST"
+                  data-email="junb119@outlook.com"
+                  action="https://script.google.com/macros/s/AKfycbwFlIPwAO2yE-FKeeBCnw1MXuwEii2OHxeHNcuy9LeR65qAlA-CrNqgE0bsGs-C9bvGNQ/exec"
+                >
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="contact_title"
+                      placeholder="title"
+                      name="name"
+                      required
+                    />
+                    <label for="contact_title">제목</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="contact_email"
+                      placeholder="email"
+                      name="email"
+                      required
+                    />
+                    <label for="contact_email">이메일</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea
+                      class="form-control"
+                      placeholder="content"
+                      id="contact_content"
+                      style="height: 400px"
+                      name="message"
+                      required
+                    ></textarea>
+                    <label for="contact_content">내용</label>
+                  </div>
+                  <button type="submit" class="btn btn-success">보내기</button>
+                  <div style="display: none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <p>
+                      메일 전송이 완료되었습니다 <br />확인 후 연락드리겠습니다.
+                      <br />감사합니다.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="/packery-mode.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- <section id="web_pj" class="swiper-slide slide3">
+            <ul class="slider">
+              <li class="web_item">
+                <figure>
+                  <img src="img/airpot.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>미래에셋 리뉴얼 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>jquery</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>
+                        미래에셋금융그룹 홈페이지를 리뉴얼한 포트폴리오입니다.
+                      </p>
+                      <ul>
+                        <li>Html, css , Javascript를 사용한 정적페이지</li>
+                        <li>
+                          Fullpage, 다양한 스크롤 애니메이션과 동적 효과를
+                          사용해 인터렉티브 느낌을 줍니다.
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/Team_Dongdongju/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="web_item">
+                <figure>
+                  <img src="img/bg.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>미래에셋 리뉴얼 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>jquery</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>
+                        미래에셋금융그룹 홈페이지를 리뉴얼한 포트폴리오입니다.
+                      </p>
+                      <ul>
+                        <li>Html, css , Javascript를 사용한 정적페이지</li>
+                        <li>
+                          Fullpage, 다양한 스크롤 애니메이션과 동적 효과를
+                          사용해 인터렉티브 느낌을 줍니다.
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/Team_Dongdongju/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="web_item">
+                <figure>
+                  <img src="img/uniqlo_bg.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>유니클로 리뉴얼 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>
+                        유니클로 코리아 홈페이지를 리뉴얼한 포트폴리오입니다.
+                      </p>
+                      <ul>
+                        <li>
+                          Html, css , Javascript를 사용한 정적페이지입니다
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/Team_Dongdongju/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="web_item">
+                <figure>
+                  <img src="img/hanhwa_bg.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>미래에셋 리뉴얼 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>jquery</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>
+                        미래에셋금융그룹 홈페이지를 리뉴얼한 포트폴리오입니다.
+                      </p>
+                      <ul>
+                        <li>Html, css , Javascript를 사용한 정적페이지</li>
+                        <li>
+                          Fullpage, 다양한 스크롤 애니메이션과 동적 효과를
+                          사용해 인터렉티브 느낌을 줍니다.
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/Team_Dongdongju/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="web_item">
+                <figure>
+                  <img src="img/starbucks_bg.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>스타벅스 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>스타벅스 클론 페이지입니다.</p>
+                      <ul>
+                        <li>Html, css , Javascript를 사용한 정적페이지</li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/starbucks/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="web_item">
+                <figure>
+                  <img src="img/kakao_bg.png" alt="" />
+                  <figcaption class="df fdc">
+                    <div class="web_title">
+                      <h2>미래에셋 리뉴얼 페이지</h2>
+                      <ul class="web_category">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>jquery</li>
+                      </ul>
+                    </div>
+                    <div class="web_desc mb-3">
+                      <p>
+                        미래에셋금융그룹 홈페이지를 리뉴얼한 포트폴리오입니다.
+                      </p>
+                      <ul>
+                        <li>Html, css , Javascript를 사용한 정적페이지</li>
+                        <li>
+                          Fullpage, 다양한 스크롤 애니메이션과 동적 효과를
+                          사용해 인터렉티브 느낌을 줍니다.
+                        </li>
+                      </ul>
+                    </div>
+                    <a
+                      href="https://junb119.github.io/Team_Dongdongju/"
+                      target="_blank"
+                      >자세히 보기</a
+                    >
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+
+            <nav class="web_nav">
+              <ion-icon
+                class="btn prev"
+                name="chevron-back-circle-outline"
+              ></ion-icon>
+              <ion-icon
+                class="btn next"
+                name="chevron-forward-circle-outline"
+              ></ion-icon>
+            </nav>
+          </section>
+          <section id="toy_pj" class="swiper-slide slide4">
+            <div class="title_container df jcc fdc">
+              <h2>Toy Project</h2>
+              <p>
+                웹 프로젝트가 아닌 게임, 기능, 도구 등 <br />간단하게 만들어 본
+                토이프로젝트 입니다.
+              </p>
+            </div>
+            <ul class="toy_list">
+              <li class="scroll-element">
+                <a
+                  href="https://junb119.github.io/pokemon_card/"
+                  target="_blank"
+                >
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>
+                          마우스 위치에 따라 카드가 따라 회전하여 3D 효과를
+                          줍니다.
+                        </h4>
+                        <ul>
+                          <li>- html,css, javascript로 구현</li>
+                          <li>- 라이브러리 사용 X</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/pika.webp" alt="" />
+                  </div>
+                  <p class="toy_list_title">포켓몬 3D 카드</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/todo.jpg" alt="" />
+                  </div>
+                  <p class="toy_list_title">TO DO LIST</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/image22.png" alt="" />
+                  </div>
+                  <p class="toy_list_title">단어 맞추기 게임</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/TOWHERE.png" alt="" />
+                  </div>
+                  <p class="toy_list_title">어디까지 가봤니</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/bucket.webp" alt="" />
+                  </div>
+                  <p class="toy_list_title">버킷리스트</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/puzzle.webp" alt="" />
+                  </div>
+                  <p class="toy_list_title">퍼즐 게임</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/tictactoe.webp" alt="" />
+                  </div>
+                  <p class="toy_list_title">틱 택 토</p>
+                </a>
+              </li>
+              <li class="scroll-element">
+                <a href="">
+                  <div class="toy_item">
+                    <div class="back_img">
+                      <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                      </ul>
+                      <div class="toy_item_content">
+                        <h4>주어진 횟수 안에 단어를 맞추는 게임입니다.</h4>
+                        <ul>
+                          <li>- 바닐라 자바스크립트로 구현</li>
+                          <li>- OOO 알고리즘 활용</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img src="img/3d_modeling.png" alt="" />
+                  </div>
+                  <p class="toy_list_title">3D Modeling</p>
+                </a>
+              </li>
+            </ul>
+          </section> -->

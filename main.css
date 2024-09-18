@@ -447,3 +447,14 @@ header a:hover {
   line-height: 1.6;
 }
 /* contact */
+
+
+@media screen and (max-width: 1024px) {
+  #dialog-content{
+    flex-direction: column;
+    }
+  #dialog-content .portfolio_dialog_bg{
+    flex-grow: 1;}
+  #dialog-content .portfolio_dialog_textBox{
+    flex-grow: 5;}
+  }

@@ -5,7 +5,7 @@ const path = require("path");
 // 서버 생성
 const server = http.createServer((req, res) => {
   // 요청된 파일 경로 설정
-  let filePath = path.join(__dirname, req.url === "/" ? "index.html" : req.url);
+  let filePath = path.join(__dirname, req.url === "/" ? "main.html" : req.url);
   console.log(`Requested file path: ${filePath}`); // 경로 출력
 
   // 파일 확장자에 따른 MIME 타입 설정

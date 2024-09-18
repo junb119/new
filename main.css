@@ -66,6 +66,7 @@ body {
   padding: 0.5em;
   cursor: pointer;
   transition: 0.2s;
+  font-weight: bold;
 }
 .list_nav button:hover {
   background: #ccc;
@@ -165,9 +166,9 @@ header a:hover {
   background: rgb(125, 84, 177);
 }
 
-/* introduce */
+/* about */
 
-/* ---introduce */
+/* ---about */
 
 /* skill */
 .selected_skill {
@@ -384,7 +385,11 @@ header a:hover {
   color: white;
   list-style-type: disc;
   margin-left: 3rem;
-  white-space: pre-line	;
+  word-wrap: break-word;
+  word-break: break-all;
+  /* 단어 중간에도 줄바꿈 */
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 .dalog_link a {

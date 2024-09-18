@@ -1,0 +1,76 @@
+[
+  {
+    "category": "frontend",
+    "skills": [
+      {
+        "name": "html",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/html.png"
+      },
+      {
+        "name": "css",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/css.png"
+      },
+      {
+        "name": "javascript",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/js.png"
+      },
+      {
+        "name": "jquery",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/jquery.png"
+      },
+      {
+        "name": "react",
+        "achivement": "70",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/react.png"
+      },
+      {
+        "name": "html",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/html.png"
+      }
+    ]
+  },
+  {
+    "category": "backend",
+    "skills": [
+      {
+        "name": "html",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/html.png"
+      }
+    ]
+  },
+  {
+    "category": "workflow_sw",
+    "skills": [
+      {
+        "name": "html",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/html.png"
+      }
+    ]
+  },
+  {
+    "category": "tool",
+    "skills": [
+      {
+        "name": "html",
+        "achivement": "80",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/html.png"
+      }
+    ]
+  }
+]

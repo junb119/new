@@ -228,7 +228,7 @@ const target = ["colorfull", colorful];
       }
       if (scrollRatio <= 1) {
         // in
-        objs.goBtn.style.visibility = 'visible'
+        objs.goBtn.style.visibility = "visible";
         objs.goBtn.style.opacity = calcValues(
           values.button_opacity,
           currentYOffset

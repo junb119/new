@@ -315,17 +315,19 @@ header a:hover {
   display: none;
   flex-direction: row;
   gap: 20px;
-  width: 70%;
+  width: 90%;
   height: 80%;
   padding: 1rem;
 }
 #dialog-content .portfolio_dialog_bg {
+  position: relative;
   flex: 1.5;
 }
 .portfolio_dialog_bg img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
 }
 #dialog-content .portfolio_dialog_textBox {
   position: relative;
@@ -447,3 +449,15 @@ header a:hover {
   line-height: 1.6;
 }
 /* contact */
+
+@media screen and (max-width: 768px) {
+  #dialog-content {
+    flex-direction: column;
+  }
+  #dialog-content .portfolio_dialog_bg {
+    height: 20%;
+  }
+  #dialog-content .portfolio_dialog_textBox {
+    flex: 4;
+  }
+}

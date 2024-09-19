@@ -57,7 +57,7 @@ const target = ["colorfull", colorful];
     let imgElem;
     for (let i = 0; i < sceneInfo.values.videoImageCount; i++) {
       imgElem = new Image();
-      imgElem.src = `./video/${target[0]}/${i + 1}.JPG`;
+      imgElem.src = `video/${target[0]}/${i + 1}.jpg`;
       sceneInfo.objs.videoImages.push(imgElem);
     }
   }

@@ -125,13 +125,13 @@ const target = ["colorfull", colorful];
       //   document.body.setAttribute("id", "show-scene-0");
       // }
       let sequence = Math.round(
-        calcValues(values.imageSequence, currentYOffset)
+        calcValues(values.imageSequence, currentYOffset),
       );
       objs.context.drawImage(objs.videoImages[sequence], 0, 0);
 
       objs.canvas.style.opacity = calcValues(
         values.canvas_opacity,
-        currentYOffset
+        currentYOffset,
       );
 
       // objs.canvas.style.opacity = calcValues(
@@ -143,21 +143,21 @@ const target = ["colorfull", colorful];
         // in
         objs.messageA.style.opacity = calcValues(
           values.messageA_opacity_in,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageA.style.transform = `translate3d(0, ${calcValues(
           values.messageA_translateY_in,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       } else {
         // out
         objs.messageA.style.opacity = calcValues(
           values.messageA_opacity_out,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageA.style.transform = `translate3d(0, ${calcValues(
           values.messageA_translateY_out,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       }
 
@@ -165,21 +165,21 @@ const target = ["colorfull", colorful];
         // in
         objs.messageB.style.opacity = calcValues(
           values.messageB_opacity_in,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageB.style.transform = `translate3d(0, ${calcValues(
           values.messageB_translateY_in,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       } else {
         // out
         objs.messageB.style.opacity = calcValues(
           values.messageB_opacity_out,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageB.style.transform = `translate3d(0, ${calcValues(
           values.messageB_translateY_out,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       }
 
@@ -187,21 +187,21 @@ const target = ["colorfull", colorful];
         // in
         objs.messageC.style.opacity = calcValues(
           values.messageC_opacity_in,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageC.style.transform = `translate3d(0, ${calcValues(
           values.messageC_translateY_in,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       } else {
         // out
         objs.messageC.style.opacity = calcValues(
           values.messageC_opacity_out,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageC.style.transform = `translate3d(0, ${calcValues(
           values.messageC_translateY_out,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       }
 
@@ -209,21 +209,21 @@ const target = ["colorfull", colorful];
         // in
         objs.messageD.style.opacity = calcValues(
           values.messageD_opacity_in,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageD.style.transform = `translate3d(0, ${calcValues(
           values.messageD_translateY_in,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       } else {
         // out
         objs.messageD.style.opacity = calcValues(
           values.messageD_opacity_out,
-          currentYOffset
+          currentYOffset,
         );
         objs.messageD.style.transform = `translate3d(0, ${calcValues(
           values.messageD_translateY_out,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       }
       if (scrollRatio <= 1) {
@@ -231,11 +231,11 @@ const target = ["colorfull", colorful];
         objs.goBtn.style.visibility = "visible";
         objs.goBtn.style.opacity = calcValues(
           values.button_opacity,
-          currentYOffset
+          currentYOffset,
         );
         objs.goBtn.style.transform = `translate3d(0, ${calcValues(
           values.button_translateY_in,
-          currentYOffset
+          currentYOffset,
         )}%, 0)`;
       }
     }

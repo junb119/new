@@ -1,2 +1,16 @@
 .env
 /node_modules
+/desert
+/element
+/email-sender
+/gray
+/sea_across
+/snow
+/colorfull
+
+video/desert
+video/element
+video/gray
+video/sea_across
+video/sea_above
+video/snow

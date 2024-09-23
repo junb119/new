@@ -46,6 +46,214 @@ window.onload = () => {
         console.error("Error fetching the portfolio:", error);
       });
   }
+
+  // about
+  am4core.useTheme(am4themes_animated);
+  // Themes end
+
+  var chart = am4core.create("about_content", am4plugins_wordCloud.WordCloud);
+  var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries());
+
+  series.accuracy = 4;
+  series.randomness = 0.2;
+  series.step = 15;
+  series.rotationThreshold = 0;
+  series.maxCount = 200;
+  series.minWordLength = 2;
+  series.labels.template.tooltipText = "{word}";
+  series.fontFamily = "Courier New";
+  series.maxFontSize = am4core.percent(30);
+  series.colors = new am4core.ColorSet();
+  series.events.on("arrangestarted", function (ev) {
+    console.log("start");
+  });
+
+  series.data = [
+    {
+      tag: "Breaking News",
+      weight: 40,
+    },
+    {
+      tag: "Environment",
+      weight: 40,
+    },
+    {
+      tag: "Politics",
+      weight: 40,
+    },
+    {
+      tag: "Business",
+      weight: 40,
+    },
+    {
+      tag: "Lifestyle",
+      weight: 30,
+    },
+    {
+      tag: "World",
+      weight: 30,
+    },
+    {
+      tag: "Sports",
+      weight: 70,
+    },
+    {
+      tag: "Fashion",
+      weight: 30,
+    },
+    {
+      tag: "Education",
+      weight: 30,
+    },
+    {
+      tag: "adsf",
+      weight: 20,
+    },
+    {
+      tag: "xczvxcvzxc",
+      weight: 20,
+    },
+    {
+      tag: "xcvdsvweve",
+      weight: 20,
+    },
+    {
+      tag: "dfewfe",
+      weight: 20,
+    },
+    {
+      tag: "zxcvsd",
+      weight: 20,
+    },
+    {
+      tag: "QWSDdsv",
+      weight: 20,
+    },
+    {
+      tag: "ACZXC",
+      weight: 20,
+    },
+    {
+      tag: "asdv",
+      weight: 20,
+    },
+    {
+      tag: "Fasasdawhion",
+      weight: 20,
+    },
+    {
+      tag: "Faxzczxashion",
+      weight: 20,
+    },
+    {
+      tag: "Fashdsfsdasdion",
+      weight: 20,
+    },
+    {
+      tag: "Fzxczxvvfashion",
+      weight: 20,
+    },
+    {
+      tag: "Fasawdqwhion",
+      weight: 20,
+    },
+    {
+      tag: "xcvzxcvzxcvxcvdsfwe",
+      weight: 20,
+    },
+    {
+      tag: "asdasd",
+      weight: 20,
+    },
+    {
+      tag: "   dfvdsf",
+      weight: 20,
+    },
+    {
+      tag: "zxcvxzcv",
+      weight: 20,
+    },
+    {
+      tag: "qwebbf",
+      weight: 20,
+    },
+    {
+      tag: "zxcaa",
+      weight: 20,
+    },
+    {
+      tag: "xczvwe",
+      weight: 20,
+    },
+    {
+      tag: "zxcqwq",
+      weight: 20,
+    },
+    {
+      tag: "acz",
+      weight: 20,
+    },
+    {
+      tag: "adw",
+      weight: 20,
+    },
+    {
+      tag: "cxvf",
+      weight: 20,
+    },
+    {
+      tag: "zxc",
+      weight: 20,
+    },
+    {
+      tag: "vv",
+      weight: 20,
+    },
+    {
+      tag: "qwe",
+      weight: 20,
+    },
+    {
+      tag: "Fashasdzwqwion",
+      weight: 20,
+    },
+    {
+      tag: "dsf",
+      weight: 20,
+    },
+    {
+      tag: "qwe",
+      weight: 20,
+    },
+    {
+      tag: "Fashddion",
+      weight: 20,
+    },
+    {
+      tag: "zcv",
+      weight: 20,
+    },
+    {
+      tag: "dsf",
+      weight: 20,
+    },
+    {
+      tag: "dsf",
+      weight: 20,
+    },
+  ];
+
+  series.dataFields.word = "tag";
+  series.dataFields.value = "weight";
+
+  const g = document.querySelectorAll("g");
+
+  for (let s of g) {
+    if (s.getAttribute("aria-labelledby") === "id-50-title")
+      s.style.display = "none";
+  }
+  // ---about
+
   // skill
 
   function fetchSkill(datas) {

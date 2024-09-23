@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,11 @@
     <title>Junb's Profile Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"
       rel="stylesheet"
@@ -24,6 +29,7 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="bg2.css" />
   </head>
   <body>
     <header>
@@ -50,8 +56,8 @@
           <section id="about" class="swiper-slide slide1">
             <div class="slide_wrapper">
               <div class="title_container"><h2>about me</h2></div>
-              <div class="about_container">
-                <h3>Hello I'm 우준범</h3>
+              <div id="about_content" class="about_container">
+                <!-- <h3>Hello I'm 우준범</h3>
                 <p>1992.01.19</p>
                 <p>주소지 : 서울시 광진구</p>
                 <p>이메일 : emfwokd@gmail.com</p>
@@ -67,11 +73,14 @@
                       >velog</a
                     >
                   </p>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
           <section id="skill" class="swiper-slide slide2 df fdc aic">
+            <div class="bg_wrapper">
+              <canvas id="canvas"></canvas>
+            </div>
             <div class="slide_wrapper df fdc">
               <div class="title_container">
                 <h2 class="">skill ability</h2>
@@ -87,102 +96,7 @@
                   <h3 class="show">frontend</h3>
                 </div>
               </div>
-              <ul class="skill_container">
-                <!-- <li class="skill_box show">
-                  <ul>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/html.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">html</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">자신 있어요</p>
-                      </div>
-                    </li>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/css.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">css</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">익숙해요</p>
-                      </div>
-                    </li>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/js.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">javascript</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">보통이예요</p>
-                      </div>
-                    </li>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/bootstrap.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">bootstrap</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">사용해봤어요</p>
-                      </div>
-                    </li>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/jquery.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">jquery</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">자신 있어요</p>
-                      </div>
-                    </li>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/react.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">react</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">자신 있어요</p>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="skill_box">
-                  <ul>
-                    <li class="df">
-                      <div class="skill_category">
-                        <img src="img/iconLarge/html.png" alt="" />
-                      </div>
-                      <div class="skill_descript">
-                        <h4 class="skill_name">back</h4>
-                        <div class="progress_bg">
-                          <div class="progress_bar" data-progress="80">0%</div>
-                        </div>
-                        <p class="skill_comment">back</p>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="skill_box">workflow sw</li>
-                <li class="skill_box">tool</li> -->
-              </ul>
+              <ul class="skill_container"></ul>
             </div>
           </section>
           <section id="portfolio" class="swiper-slide slide3">
@@ -191,7 +105,7 @@
               style="display: none; max-width: 1600px"
             ></div> -->
             <div id="dialog-content">
-              <div class="portfolio_dialog_bg ">
+              <div class="portfolio_dialog_bg">
                 <img src="./img/mirae_bg.png" alt="" />
               </div>
               <div class="portfolio_dialog_textBox df fdc">
@@ -254,7 +168,12 @@
               </div>
             </div>
           </section>
-          <section id="contact" class="swiper-slide slide4">
+          <section id="contact" class="swiper-slide">
+            <div class="box">
+              <div class="wave -one"></div>
+              <div class="wave -two"></div>
+              <div class="wave -three"></div>
+            </div>
             <div class="slide_wrapper df fdc">
               <div class="title_container"><h2>contact</h2></div>
 
@@ -301,7 +220,6 @@
                   </div>
                   <button type="submit" class="btn btn-success">보내기</button>
                   <div style="display: none" class="thankyou_message">
-                    <!-- You can customize the thankyou message by editing the code below -->
                     <p>
                       메일 전송이 완료되었습니다 <br />확인 후 연락드리겠습니다.
                       <br />감사합니다.
@@ -327,6 +245,7 @@
       src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
     ></script>
     <script src="main.js"></script>
+    <script src="bg2.js"></script>
   </body>
 </html>
 

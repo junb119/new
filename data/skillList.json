@@ -4,39 +4,39 @@
     "skills": [
       {
         "name": "html",
-        "achivement": "80",
+        "achivement": "90",
         "comment": "익숙해요",
         "img": "img/iconLarge/html.png"
       },
       {
         "name": "css",
-        "achivement": "80",
+        "achivement": "85",
         "comment": "익숙해요",
         "img": "img/iconLarge/css.png"
       },
       {
         "name": "javascript",
-        "achivement": "80",
+        "achivement": "90",
         "comment": "익숙해요",
         "img": "img/iconLarge/js.png"
       },
       {
         "name": "jquery",
-        "achivement": "80",
+        "achivement": "90",
         "comment": "익숙해요",
         "img": "img/iconLarge/jquery.png"
       },
       {
-        "name": "react",
-        "achivement": "70",
-        "comment": "보통이예요",
-        "img": "img/iconLarge/react.png"
-      },
-      {
-        "name": "html",
+        "name": "bootstrap",
         "achivement": "80",
         "comment": "익숙해요",
-        "img": "img/iconLarge/html.png"
+        "img": "img/iconLarge/bootstrap.png"
+      },
+      {
+        "name": "react",
+        "achivement": "65",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/react.png"
       }
     ]
   },
@@ -44,10 +44,28 @@
     "category": "backend",
     "skills": [
       {
-        "name": "html",
-        "achivement": "80",
-        "comment": "익숙해요",
-        "img": "img/iconLarge/html.png"
+        "name": "PHP",
+        "achivement": "65",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/php.png"
+      },
+      {
+        "name": "mysql",
+        "achivement": "70",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/mysql.png"
+      },
+      {
+        "name": "hadoop",
+        "achivement": "40",
+        "comment": "사용해봤어요",
+        "img": "img/iconLarge/hadoop.png"
+      },
+      {
+        "name": "mssql",
+        "achivement": "70",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/mssql.png"
       }
     ]
   },
@@ -55,10 +73,22 @@
     "category": "workflow_sw",
     "skills": [
       {
-        "name": "html",
-        "achivement": "80",
+        "name": "GIT",
+        "achivement": "85",
         "comment": "익숙해요",
-        "img": "img/iconLarge/html.png"
+        "img": "img/iconLarge/git.png"
+      },
+      {
+        "name": "slack",
+        "achivement": "70",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/slack.png"
+      },
+      {
+        "name": "notion",
+        "achivement": "85",
+        "comment": "익숙해요",
+        "img": "img/iconLarge/notion.png"
       }
     ]
   },
@@ -66,10 +96,22 @@
     "category": "tool",
     "skills": [
       {
-        "name": "html",
-        "achivement": "80",
+        "name": "figma",
+        "achivement": "85",
         "comment": "익숙해요",
-        "img": "img/iconLarge/html.png"
+        "img": "img/iconLarge/figma.png"
+      },
+      {
+        "name": "photoshop",
+        "achivement": "60",
+        "comment": "보통이예요",
+        "img": "img/iconLarge/photoshop.png"
+      },
+      {
+        "name": "premiere pro",
+        "achivement": "40",
+        "comment": "사용해봤어요",
+        "img": "img/iconLarge/premiere_pro.png"
       }
     ]
   }

@@ -7,10 +7,13 @@
 /sea_across
 /snow
 /colorfull
-
+/video/animate
 /video/desert
 /video/element
 /video/gray
 /video/sea_across
 /video/sea_above
 /video/snow
+
+
+# git rm -r --cached element
